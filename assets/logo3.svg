@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&amp;display=swap');
+      .bold-text { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 80px; fill: #dc2626; letter-spacing: -2px; }
+      .light-text { font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 80px; fill: #1f2937; letter-spacing: 2px; }
+    </style>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="25" />
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+    </filter>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background decorative elements - more highlighted -->
+  <circle cx="380" cy="70" r="80" fill="url(#gradient1)" opacity="0.9" filter="url(#blur1)" />
+  <circle cx="100" cy="180" r="60" fill="#fca5a5" opacity="0.85" filter="url(#blur2)" />
+  <circle cx="420" cy="200" r="40" fill="#f87171" opacity="0.8" filter="url(#blur2)" />
+  <rect x="70" y="60" width="40" height="40" fill="none" stroke="#dc2626" stroke-width="4" opacity="0.7" transform="rotate(12 90 80)" />
+  <rect x="360" y="160" width="30" height="30" fill="#ef4444" opacity="0.6" transform="rotate(45 375 175)" />
+  <circle cx="140" cy="60" r="20" fill="#fca5a5" opacity="0.75" />
+  
+  <!-- Logo text -->
+  <text x="100" y="140" class="bold-text">re</text>
+  <text x="215" y="140" class="light-text">sume</text>
+</svg>

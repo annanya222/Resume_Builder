@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&amp;display=swap');
+      .bold-text { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 72px; fill: #dc2626; }
+      .light-text { font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 72px; fill: #1f2937; }
+    </style>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+  </defs>
+  
+  <!-- Background decorative elements -->
+  <circle cx="320" cy="60" r="64" fill="#fee2e2" opacity="0.4" filter="url(#blur1)" />
+  <circle cx="80" cy="140" r="48" fill="#fecaca" opacity="0.3" filter="url(#blur2)" />
+  <rect x="60" y="80" width="32" height="32" fill="none" stroke="#fca5a5" stroke-width="4" opacity="0.2" transform="rotate(12 76 96)" />
+  <rect x="300" y="130" width="24" height="24" fill="#f87171" opacity="0.1" transform="rotate(45 312 142)" />
+  
+  <!-- Logo text -->
+  <text x="90" y="120" class="bold-text">re</text>
+  <text x="170" y="120" class="light-text">sume</text>
+</svg>
